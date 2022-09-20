@@ -60,12 +60,6 @@ VALID_DISTS="$VALID_DISTS_UBUNTU $VALID_DISTS_DEBIAN"
 
 VALID_ARCHS="armhf arm64 amd64"
 
-if [ ! "$SKIP_MOVE" = "true" ]; then
-        tmp=$(mktemp -d)
-        mv ./* ./.* "$tmp/"
-        mv "$tmp" ./source
-fi
-
 ls source
 
 set -ex
